@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/styleSheetMain.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/89d3fee1eb.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <!--------------------- Navigation bar -------------------------------->
+      <header id="bodyHeader" class="header">
+        <div class="logo">
+          <img src="assets/media/musicLogo.png" alt="logo" />
+          <div class="logo-name">
+            <p>Feel</p>
+            <p style="color: brown">The Beat</p>
+          </div>
+          <p class="favs">Favourites</p>
+        </div>
+
+        <div class="searchbox-container">
+          <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" id="searchBar" placeholder="Search" />
+            <i class="fas fa-microphone"></i>
+          </div>
+          <i class="fas bell fa-bell"></i>
+          <img class="profile-photo" src="assets/media/profile.jpg" />
+        </div>
+        <div id="bars">
+          <i class="fas ham-burger fa-bars"></i>
+          <div class="dropdown">
+            <div>Favorites</div>
+            <hr />
+            <div style="color: brown">
+              <i class="fas fa-bell"></i> Notification
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <aside class="aside section-1">
+          <div class="trending-section">
+            <div class="trendingNow">
+              <span>Trending Now</span>
+            </div>
+            <!-------------------------------------Crousel-------------------- -->
+            <div class="carousel">
+              <div id="slider">
+                <input type="radio" name="slider" id="s1" checked />
+                <input type="radio" name="slider" id="s2" />
+                <input type="radio" name="slider" id="s3" />
+                <input type="radio" name="slider" id="s4" />
+                <input type="radio" name="slider" id="s5" />
+
+                <label for="s1" id="slide1"
+                  ><img src="assets/media/img1.jpg" alt=""
+                /></label>
+                <label for="s2" id="slide2"
+                  ><img src="assets/media/img2.jpg" alt=""
+                /></label>
+                <label for="s3" id="slide3"
+                  ><img src="assets/media/img3.jpg" alt=""
+                /></label>
+                <label for="s4" id="slide4"
+                  ><img src="assets/media/img4.jpg" alt=""
+                /></label>
+                <label for="s5" id="slide5"
+                  ><img src="assets/media/img5.png" alt=""
+                /></label>
+              </div>
+            </div>
+          </div>
+          <!-- -----------------Latest Release Container-------------------- -->
+          <div class="latest-release-container">
+            <div class="latest-release-header">
+              <p>Latest Release</p>
+            </div>
+            <div class="latest-release-card-container">
+              <!-- First Card -->
+              <div class="latest-release-card">
+                <div class="img-play-btn">
+                  <img
+                    class="img-under-release"
+                    src="assets/media/cheapthrills.jpg"
+                    alt=""
+                  />
+                  <i class="fa-solid fa-play release-play-btn"></i>
+                  <div class="song-name-release">
+                    <p class="song-name">Beliver</p>
+                    <p class="date">AUG 11, 2017</p>
+                  </div>
+                </div>
+                <div class="latest-release-dropdown-btn">
+                  <label for="latest-release-checkbox1"
+                    ><i class="fa-solid horizontal_dots fa-ellipsis"></i
+                  ></label>
+                  <input type="checkbox" id="latest-release-checkbox1" />
+                  <div class="latest-release-dropdown-container">
+                    <div class="drop-item">
+                      <!-- if user clicks on play now button, he/she will be taken to the single playlist page -->
+                      <p>
+                        <i class="fas fa-play-circle"></i>
+                        <a href="">Play Now</a>
+                      </p>
+                    </div>
+                    <hr />
+                    <div class="drop-item">
+                      <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                    </div>
+                    <hr />
+                    <div class="drop-item">
+                      <p><i class="fas fa-music"></i> Add to playlist</p>
+                    </div>
+                    <hr />
+                    <div class="drop-item">
+                      <p><i class="fas fa-info-circle"></i> Get Info</p>
+                    </div>
+                  </div>
+                  <!-- duration of the song -->
+                  <p>3:35</p>
+                </div>
+              </div>
+              <!-- Second Card -->
+              <div class="latest-release-card">
+                <div class="img-play-btn">
+                  <img
+                    class="img-under-release"
+                    src="assets/media/alan.jpg"
+                    alt=""
+                  />
+                  <i class="fa-solid fa-play release-play-btn"></i>
+                  <div class="song-name-release">
+                    <p class="song-name">Beliver</p>
+                    <p class="date">AUG 11, 2017</p>
+                  </div>
+                </div>
+                <div class="latest-release-dropdown-btn">
+                  <label for="latest-release-checkbox2"
+                    ><i class="fa-solid horizontal_dots fa-ellipsis"></i
+                  ></label>
+                  <input type="checkbox" id="latest-release-checkbox2" />
+                  <div class="latest-release-dropdown-container">
+                    <div class="drop-item">
+                      <!-- if user clicks on play now button, he/she will be taken to the single playlist page -->
+                      <p>
+                        <i class="fas fa-play-circle"></i>
+                        <a href=""> Play Now</a>
+                      </p>
+                    </div>
+                    <hr />
+                    <div class="drop-item">
+                      <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                    </div>
+                    <hr />
+                    <div class="drop-item">
+                      <p><i class="fas fa-music"></i> Add to playlist</p>
+                    </div>
+                    <hr />
+                    <div class="drop-item">
+                      <p><i class="fas fa-info-circle"></i> Get Info</p>
+                    </div>
+                  </div>
+                  <!-- duration of the song -->
+                  <p>3:35</p>
+                </div>
+              </div>
+              <!-- Third Card -->
+              <div class="latest-release-card">
+                <div class="img-play-btn">
+                  <img
+                    class="img-under-release"
+                    src="assets/media/imagineDragons.jpg"
+                    alt=""
+                  />
+                  <i class="fa-solid fa-play release-play-btn"></i>
+                  <div class="song-name-release">
+                    <p class="song-name">Beliver</p>
+                    <p class="date">AUG 11, 2017</p>
+                  </div>
+                </div>
+                <div class="latest-release-dropdown-btn">
+                  <label for="latest-release-checkbox3"
+                    ><i class="fa-solid horizontal_dots fa-ellipsis"></i
+                  ></label>
+                  <input type="checkbox" id="latest-release-checkbox3" />
+                  <div class="latest-release-dropdown-container">
+                    <div class="drop-item">
+                      <!-- if user clicks on play now button, he/she will be taken to the single playlist page -->
+                      <p>
+                        <i class="fas fa-play-circle"></i>
+                        <a href="">Play Now</a>
+                      </p>
+                    </div>
+                    <hr />
+                    <div class="drop-item">
+                      <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                    </div>
+                    <hr />
+                    <div class="drop-item">
+                      <p><i class="fas fa-music"></i> Add to playlist</p>
+                    </div>
+                    <hr />
+                    <div class="drop-item">
+                      <p><i class="fas fa-info-circle"></i> Get Info</p>
+                    </div>
+                  </div>
+                  <!-- duration of the song -->
+                  <p>3:35</p>
+                </div>
+              </div>
+              <!-- Fourth Card -->
+              <div class="latest-release-card">
+                <div class="img-play-btn">
+                  <img
+                    class="img-under-release"
+                    src="assets/media/miamor.jpg"
+                    alt=""
+                  />
+                  <i class="fa-solid fa-play release-play-btn"></i>
+                  <div class="song-name-release">
+                    <p class="song-name">Beliver</p>
+                    <p class="date">AUG 11, 2017</p>
+                  </div>
+                </div>
+                <div class="latest-release-dropdown-btn">
+                  <label for="latest-release-checkbox4"
+                    ><i class="fa-solid horizontal_dots fa-ellipsis"></i
+                  ></label>
+                  <input type="checkbox" id="latest-release-checkbox4" />
+                  <div class="latest-release-dropdown-container">
+                    <div class="drop-item">
+                      <!-- if user clicks on play now button, he/she will be taken to the single playlist page -->
+                      <p>
+                        <i class="fas fa-play-circle"></i>
+                        <a href=""> Play Now</a>
+                      </p>
+                    </div>
+                    <hr />
+                    <div class="drop-item">
+                      <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                    </div>
+                    <hr />
+                    <div class="drop-item">
+                      <p><i class="fas fa-music"></i> Add to playlist</p>
+                    </div>
+                    <hr />
+                    <div class="drop-item">
+                      <p><i class="fas fa-info-circle"></i> Get Info</p>
+                    </div>
+                  </div>
+                  <!-- duration of the song -->
+                  <p>3:35</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--------------------- Popular Artist Container------------------- -->
+          <div class="popular-artist-container">
+            <div class="popular-artist-header">
+              <p>Popular Artists</p>
+            </div>
+            <div class="popular-artist-img-container">
+              <!-- First popular img container -->
+              <div class="popular-artist-img-name-container">
+                <a
+                  href="SingleScreenPage.html"
+                  target="_blank"
+                  class="image-container-1"
+                >
+                  <img src="assets/media/EdSheeran.jpg" alt="" />
+                  <i class="fas popular-play-btn fa-play"></i>
+                </a>
+                <div>
+                  <p>EdSheeran</p>
+                </div>
+              </div>
+              <!-- Second popular img container -->
+              <div class="popular-artist-img-name-container">
+                <a
+                  href="SingleScreenPage.html"
+                  target="_blank"
+                  class="image-container-1"
+                >
+                  <img src="assets/media/bohemia.jpg" alt="" />
+                  <i class="fas popular-play-btn fa-play"></i>
+                </a>
+                <div>
+                  <p>Bohemia</p>
+                </div>
+              </div>
+              <!-- Third popular img container -->
+              <div class="popular-artist-img-name-container">
+                <a
+                  href="SingleScreenPage.html"
+                  target="_blank"
+                  class="image-container-1"
+                >
+                  <img src="assets/media/duaLipa.jpg" alt="" />
+                  <i class="fas popular-play-btn fa-play"></i>
+                </a>
+                <div>
+                  <p>Dua Lipa</p>
+                </div>
+              </div>
+              <!-- Fourth popular img container -->
+              <div class="popular-artist-img-name-container">
+                <a
+                  href="SingleScreenPage.html"
+                  target="_blank"
+                  class="image-container-1"
+                >
+                  <img src="assets/media/sia.jpg" alt="" />
+                  <i class="fas popular-play-btn fa-play"></i>
+                </a>
+                <div>
+                  <p>Sia</p>
+                </div>
+              </div>
+              <!-- Fifth popular img container -->
+              <div class="popular-artist-img-name-container">
+                <a
+                  href="SingleScreenPage.html"
+                  target="_blank"
+                  class="image-container-1"
+                >
+                  <img src="assets/media/alan.jpg" alt="" />
+                  <i class="fas popular-play-btn fa-play"></i>
+                </a>
+                <div>
+                  <p>Alan Walker</p>
+                </div>
+              </div>
+              <!-- sixth Popular Image Container -->
+              <div class="popular-artist-img-name-container">
+                <a
+                  href="SingleScreenPage.html"
+                  target="_blank"
+                  class="image-container-1"
+                >
+                  <img src="assets/media/coldPlay.jpg" alt="" />
+                  <i class="fas popular-play-btn fa-play"></i>
+                </a>
+                <div>
+                  <p>Cold Play</p>
+                </div>
+              </div>
+              <!-- seventh Popular Image Container -->
+              <div class="popular-artist-img-name-container">
+                <a
+                  href="SingleScreenPage.html"
+                  target="_blank"
+                  class="image-container-1"
+                >
+                  <img src="assets/media/rahatFateh.jpg" alt="" />
+                  <i class="fas popular-play-btn fa-play"></i>
+                </a>
+                <div>
+                  <p>Rahat Fateh Ali Khan</p>
+                </div>
+              </div>
+              <div class="popular-artist-img-name-container">
+                <a
+                  href="SingleScreenPage.html"
+                  target="_blank"
+                  class="image-container-1"
+                >
+                  <img src="assets/media/dayRenolds.jpg" alt="" />
+                  <i class="fas popular-play-btn fa-play"></i>
+                </a>
+                <div>
+                  <p>Day Renolds</p>
+                </div>
+              </div>
+              <!-- Ninth Popular Image Container -->
+              <div class="popular-artist-img-name-container">
+                <a
+                  href="SingleScreenPage.html"
+                  target="_blank"
+                  class="image-container-1"
+                >
+                  <img src="assets/media/atifAslam.jpg" alt="" />
+                  <i class="fas popular-play-btn fa-play"></i>
+                </a>
+                <div>
+                  <p>Atif Aslam</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--------------------------Stations Corner --------------------------->
+          <div class="stations-container">
+            <div class="stations-logo-container">
+              <img src="assets/media/stations-img.png" alt="" />
+            </div>
+
+            <div class="theme-content">
+              <div class="stations-img">
+                <img src="assets/media/closer.jpg" alt="" />
+                <p class="stations-para">Love</p>
+              </div>
+
+              <div class="stations-img">
+                <img src="assets/media/img2.jpg" alt="" />
+                <p class="stations-para">Retro</p>
+              </div>
+              <div class="stations-img">
+                <img src="assets/media/husn.jpg" alt="" />
+                <p class="stations-para">Chill</p>
+              </div>
+              <div class="stations-img">
+                <img src="assets/media/imagineDragons.jpg" alt="" />
+                <p class="stations-para">Gym</p>
+              </div>
+              <div class="stations-img">
+                <img src="assets/media/alan.jpg" alt="" />
+                <p class="stations-para">Rock</p>
+              </div>
+              <div class="stations-img">
+                <img src="assets/media/coldPlay.jpg" alt="" />
+                <p class="stations-para">Pop</p>
+              </div>
+            </div>
+          </div>
+          <!--------------------------Theme Part 2------------- -->
+          <div class="card-container">
+            <div class="card">
+              <img
+                src="assets/media/party.jpg"
+                alt="Image 1"
+                class="card-img"
+              />
+              <p>Party</p>
+            </div>
+            <!-- Repeat for other cards -->
+            <div class="card">
+              <img
+                src="assets/media/electronic.jpg"
+                alt="Image 1"
+                class="card-img"
+              />
+              <p>Electronic</p>
+            </div>
+            <div class="card">
+              <img
+                src="assets/media/roadTrip.jpg"
+                alt="Image 1"
+                class="card-img"
+              />
+              <p>Travel</p>
+            </div>
+            <div class="card">
+              <img src="assets/media/lofi.jpg" alt="Image 1" class="card-img" />
+              <p>Lofi</p>
+            </div>
+            <div class="card">
+              <img
+                src="assets/media/death.jpg"
+                alt="Image 1"
+                class="card-img"
+              />
+              <p>Death</p>
+            </div>
+            <div class="card">
+              <img
+                src="assets/media/desire.jpg"
+                alt="Image 1"
+                class="card-img"
+              />
+              <p>Desire</p>
+            </div>
+          </div>
+          <!-- -----------------------Latest English Container---------------- -->
+          <div class="latest-english-container">
+            <div class="latest-english-header">
+              <p>Latest English</p>
+            </div>
+            <div class="latest-english-content">
+              <!-- Card-1 -->
+              <div class="latest-english-card">
+                <img src="assets/media/marvel.jpg" alt="" />
+                <p class="latest-english-name">Marvel</p>
+                <p class="latest-english-date">AUG 11, 2017</p>
+              </div>
+              <div class="latest-english-card">
+                <img src="assets/media/johnWick.jpg" alt="" />
+                <p class="latest-english-name">John Wick</p>
+                <p class="latest-english-date">AUG 11, 2017</p>
+              </div>
+              <div class="latest-english-card">
+                <img src="assets/media/hell.jpg" alt="" />
+                <p class="latest-english-name">Back From Hell</p>
+                <p class="latest-english-date">AUG 11, 2017</p>
+              </div>
+              <div class="latest-english-card">
+                <img src="assets/media/earth.jpg" alt="" />
+                <p class="latest-english-name">After Earth</p>
+                <p class="latest-english-date">AUG 11, 2017</p>
+              </div>
+              <div class="latest-english-card">
+                <img src="assets/media/bloodShot.jpg" alt="" />
+                <p class="latest-english-name">BloodShot</p>
+                <p class="latest-english-date">AUG 11, 2017</p>
+              </div>
+              <div class="latest-english-card">
+                <img src="assets/media/noah.jpg" alt="" />
+                <p class="latest-english-name">Noah</p>
+                <p class="latest-english-date">AUG 11, 2017</p>
+              </div>
+              <div class="latest-english-card">
+                <img src="assets/media/Death.jpg" alt="" />
+                <p class="latest-english-name">Death</p>
+                <p class="latest-english-date">AUG 11, 2017</p>
+              </div>
+            </div>
+          </div>
+          <!-- -----------------------Latest Hindi Container---------------- -->
+          <div class="latest-english-container">
+            <div class="latest-english-header">
+              <p>Latest Hindi</p>
+            </div>
+            <div class="latest-english-content">
+              <!-- Card-1 -->
+              <div class="latest-english-card">
+                <img src="assets/media/marvel.jpg" alt="" />
+                <p class="latest-english-name">Marvel</p>
+                <p class="latest-english-date">AUG 11, 2017</p>
+              </div>
+              <div class="latest-english-card">
+                <img src="assets/media/johnWick.jpg" alt="" />
+                <p class="latest-english-name">John Wick</p>
+                <p class="latest-english-date">AUG 11, 2017</p>
+              </div>
+              <div class="latest-english-card">
+                <img src="assets/media/hell.jpg" alt="" />
+                <p class="latest-english-name">Back From Hell</p>
+                <p class="latest-english-date">AUG 11, 2017</p>
+              </div>
+              <div class="latest-english-card">
+                <img src="assets/media/earth.jpg" alt="" />
+                <p class="latest-english-name">After Earth</p>
+                <p class="latest-english-date">AUG 11, 2017</p>
+              </div>
+              <div class="latest-english-card">
+                <img src="assets/media/bloodShot.jpg" alt="" />
+                <p class="latest-english-name">BloodShot</p>
+                <p class="latest-english-date">AUG 11, 2017</p>
+              </div>
+              <div class="latest-english-card">
+                <img src="assets/media/noah.jpg" alt="" />
+                <p class="latest-english-name">Noah</p>
+                <p class="latest-english-date">AUG 11, 2017</p>
+              </div>
+              <div class="latest-english-card">
+                <img src="assets/media/Death.jpg" alt="" />
+                <p class="latest-english-name">Death</p>
+                <p class="latest-english-date">AUG 11, 2017</p>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <!---------------------------------------------Aside Section-2 ------------------------------->
+        <aside class="aside section-2">
+          <!------------------------------------------Queue Header ---------------------------------->
+          <div class="queue-section">
+            <div class="queue-header">
+              <p>Queue</p>
+              <div class="queue-btn-container">
+                <label for="mycheckbox">
+                  Queue <span><i class="fas fa-angle-down"></i></span>
+                </label>
+                <input type="checkbox" id="mycheckbox" />
+                <div id="dropdown-item" class="queue-btn-dropdown">
+                  <a href="">Playlists</a>
+                  <hr />
+                  <a href="">Favourite Songs</a>
+                  <hr />
+                  <a href="">Close</a>
+                </div>
+              </div>
+            </div>
+            <!------------------------------------------ Queue Section---------------------------------->
+            <div class="queue-elements-container">
+              <!-- Card 1 -->
+              <div class="queue-element">
+                <div class="song-image-container">
+                  <p class="queue-number">01</p>
+                  <div class="image-container">
+                    <img class="queue-song-img" src="assets/media/closer.jpg" />
+                    <i class="fas play-btn fa-play"></i>
+                  </div>
+                  <div class="song-and-artist-container">
+                    <p class="queue-song-name">Closer</p>
+                    <p class="queue-artist-name">The ChainSmokers</p>
+                  </div>
+                </div>
+                <span class="wishlist">
+                  <button><i class="fas wishlist-icon fa-heart"></i></button>
+                </span>
+              </div>
+              <!-- Card 2 -->
+              <div class="queue-element">
+                <div class="song-image-container">
+                  <p class="queue-number">02</p>
+                  <div class="image-container">
+                    <img
+                      class="queue-song-img"
+                      src="assets/media/imagineDragons.jpg"
+                    />
+                    <i class="fas play-btn fa-play"></i>
+                  </div>
+                  <div class="song-and-artist-container">
+                    <p class="queue-song-name">Beliver</p>
+                    <p class="queue-artist-name">Day Renolds</p>
+                  </div>
+                </div>
+                <span class="wishlist">
+                  <button><i class="fas wishlist-icon fa-heart"></i></button>
+                </span>
+              </div>
+              <!-- Card 3 -->
+              <div class="queue-element">
+                <div class="song-image-container">
+                  <p class="queue-number">03</p>
+                  <div class="image-container">
+                    <img
+                      class="queue-song-img"
+                      src="assets/media/imagineDragons.jpg"
+                    />
+                    <i class="fas play-btn fa-play"></i>
+                  </div>
+                  <div class="song-and-artist-container">
+                    <p class="queue-song-name">Whatever It Takes</p>
+                    <p class="queue-artist-name">Day Renolds</p>
+                  </div>
+                </div>
+                <span class="wishlist">
+                  <button><i class="fas wishlist-icon fa-heart"></i></button>
+                </span>
+              </div>
+              <!-- Card 4 -->
+              <div class="queue-element">
+                <div class="song-image-container">
+                  <p class="queue-number">04</p>
+                  <div class="image-container">
+                    <img class="queue-song-img" src="assets/media/miamor.jpg" />
+                    <i class="fas play-btn fa-play"></i>
+                  </div>
+                  <div class="song-and-artist-container">
+                    <p class="queue-song-name">Mi Amor</p>
+                    <p class="queue-artist-name">Sharn</p>
+                  </div>
+                </div>
+                <span class="wishlist">
+                  <button><i class="fas wishlist-icon fa-heart"></i></button>
+                </span>
+              </div>
+              <!-- Card 5 -->
+              <div class="queue-element">
+                <div class="song-image-container">
+                  <p class="queue-number">05</p>
+                  <div class="image-container">
+                    <img class="queue-song-img" src="assets/media/husn.jpg" />
+                    <i class="fas play-btn fa-play"></i>
+                  </div>
+                  <div class="song-and-artist-container">
+                    <p class="queue-song-name">Husn</p>
+                    <p class="queue-artist-name">Anuv Jain</p>
+                  </div>
+                </div>
+                <span class="wishlist">
+                  <button><i class="fas wishlist-icon fa-heart"></i></button>
+                </span>
+              </div>
+              <!-- Card 6 -->
+              <div class="queue-element">
+                <div class="song-image-container">
+                  <p class="queue-number">06</p>
+                  <div class="image-container">
+                    <img
+                      class="queue-song-img"
+                      src="assets/media/cheapthrills.jpg"
+                    />
+                    <i class="fas play-btn fa-play"></i>
+                  </div>
+                  <div class="song-and-artist-container">
+                    <p class="queue-song-name">Cheap Thrills</p>
+                    <p class="queue-artist-name">Sia</p>
+                  </div>
+                </div>
+                <span class="wishlist">
+                  <button><i class="fas wishlist-icon fa-heart"></i></button>
+                </span>
+              </div>
+              <!-- Card 7 -->
+              <div class="queue-element">
+                <div class="song-image-container">
+                  <p class="queue-number">07</p>
+                  <div class="image-container">
+                    <img class="queue-song-img" src="assets/media/riseup.jpg" />
+                    <i class="fas play-btn fa-play"></i>
+                  </div>
+                  <div class="song-and-artist-container">
+                    <p class="queue-song-name">Rise Up</p>
+                    <p class="queue-artist-name">Andra Day</p>
+                  </div>
+                </div>
+                <span class="wishlist">
+                  <button><i class="fas wishlist-icon fa-heart"></i></button>
+                </span>
+              </div>
+              <!-- Card 8 -->
+              <div class="queue-element">
+                <div class="song-image-container">
+                  <p class="queue-number">08</p>
+                  <div class="image-container">
+                    <img class="queue-song-img" src="assets/media/alan.jpg" />
+                    <i class="fas play-btn fa-play"></i>
+                  </div>
+                  <div class="song-and-artist-container">
+                    <p class="queue-song-name">Alone</p>
+                    <p class="queue-artist-name">Alan Walker</p>
+                  </div>
+                </div>
+                <span class="wishlist">
+                  <button><i class="fas wishlist-icon fa-heart"></i></button>
+                </span>
+              </div>
+              <!-- Card 9 -->
+              <div class="queue-element">
+                <div class="song-image-container">
+                  <p class="queue-number">09</p>
+                  <div class="image-container">
+                    <img class="queue-song-img" src="assets/media/alan.jpg" />
+                    <i class="fas play-btn fa-play"></i>
+                  </div>
+                  <div class="song-and-artist-container">
+                    <p class="queue-song-name">On My Way</p>
+                    <p class="queue-artist-name">Alan Walker</p>
+                  </div>
+                </div>
+                <span class="wishlist">
+                  <button><i class="fas wishlist-icon fa-heart"></i></button>
+                </span>
+              </div>
+              <!-- Card 10 -->
+              <div class="queue-element">
+                <div class="song-image-container">
+                  <p class="queue-number">10</p>
+                  <div class="image-container">
+                    <img class="queue-song-img" src="assets/media/alan.jpg" />
+                    <i class="fas play-btn fa-play"></i>
+                  </div>
+                  <div class="song-and-artist-container">
+                    <p class="queue-song-name">Darkside</p>
+                    <p class="queue-artist-name">Alan Walker</p>
+                  </div>
+                </div>
+                <span class="wishlist">
+                  <button><i class="fas wishlist-icon fa-heart"></i></button>
+                </span>
+              </div>
+              <!-- Card 11 -->
+              <div class="queue-element">
+                <div class="song-image-container">
+                  <p class="queue-number">11</p>
+                  <div class="image-container">
+                    <img
+                      class="queue-song-img"
+                      src="assets/media/atifAslam.jpg"
+                    />
+                    <i class="fas play-btn fa-play"></i>
+                  </div>
+                  <div class="song-and-artist-container">
+                    <p class="queue-song-name">Pheli Dafa</p>
+                    <p class="queue-artist-name">Atif Aslam</p>
+                  </div>
+                </div>
+                <span class="wishlist">
+                  <button><i class="fas wishlist-icon fa-heart"></i></button>
+                </span>
+              </div>
+              <!-- Card 12 -->
+              <div class="queue-element">
+                <div class="song-image-container">
+                  <p class="queue-number">12</p>
+                  <div class="image-container">
+                    <img
+                      class="queue-song-img"
+                      src="assets/media/atifAslam.jpg"
+                    />
+                    <i class="fas play-btn fa-play"></i>
+                  </div>
+                  <div class="song-and-artist-container">
+                    <p class="queue-song-name">Woh Lamhe</p>
+                    <p class="queue-artist-name">Atif Aslam</p>
+                  </div>
+                </div>
+                <span class="wishlist">
+                  <button><i class="fas wishlist-icon fa-heart"></i></button>
+                </span>
+              </div>
+              <!-- Card 13 -->
+              <div class="queue-element">
+                <div class="song-image-container">
+                  <p class="queue-number">13</p>
+                  <div class="image-container">
+                    <img
+                      class="queue-song-img"
+                      src="assets/media/atifAslam.jpg"
+                    />
+                    <i class="fas play-btn fa-play"></i>
+                  </div>
+                  <div class="song-and-artist-container">
+                    <p class="queue-song-name">Pheli Dafa</p>
+                    <p class="queue-artist-name">Atif Aslam</p>
+                  </div>
+                </div>
+                <span class="wishlist">
+                  <button><i class="fas wishlist-icon fa-heart"></i></button>
+                </span>
+              </div>
+              <!-- Card 14 -->
+              <div class="queue-element">
+                <div class="song-image-container">
+                  <p class="queue-number">14</p>
+                  <div class="image-container">
+                    <img
+                      class="queue-song-img"
+                      src="assets/media/atifAslam.jpg"
+                    />
+                    <i class="fas play-btn fa-play"></i>
+                  </div>
+                  <div class="song-and-artist-container">
+                    <p class="queue-song-name">Pheli Dafa</p>
+                    <p class="queue-artist-name">Atif Aslam</p>
+                  </div>
+                </div>
+                <span class="wishlist">
+                  <button><i class="fas wishlist-icon fa-heart"></i></button>
+                </span>
+              </div>
+              <!-- Card 15 -->
+              <div class="queue-element">
+                <div class="song-image-container">
+                  <p class="queue-number">15</p>
+                  <div class="image-container">
+                    <img
+                      class="queue-song-img"
+                      src="assets/media/atifAslam.jpg"
+                    />
+                    <i class="fas play-btn fa-play"></i>
+                  </div>
+                  <div class="song-and-artist-container">
+                    <p class="queue-song-name">Woh Lamhe</p>
+                    <p class="queue-artist-name">Atif Aslam</p>
+                  </div>
+                </div>
+                <span class="wishlist">
+                  <button><i class="fas wishlist-icon fa-heart"></i></button>
+                </span>
+              </div>
+              <!-- Card 16 -->
+              <div class="queue-element">
+                <div class="song-image-container">
+                  <p class="queue-number">16</p>
+                  <div class="image-container">
+                    <img
+                      class="queue-song-img"
+                      src="assets/media/atifAslam.jpg"
+                    />
+                    <i class="fas play-btn fa-play"></i>
+                  </div>
+                  <div class="song-and-artist-container">
+                    <p class="queue-song-name">Pheli Dafa</p>
+                    <p class="queue-artist-name">Atif Aslam</p>
+                  </div>
+                </div>
+                <span class="wishlist">
+                  <button><i class="fas wishlist-icon fa-heart"></i></button>
+                </span>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </main>
+    </div>
+  </body>
+</html>
