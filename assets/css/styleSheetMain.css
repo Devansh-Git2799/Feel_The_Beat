@@ -1,4 +1,4 @@
-/* All the code in this sectin are common code  */
+/* All the code in this section are common code  */
 :root {
   --background-image: url(../media/bgImg.avif);
   --color-support: #ffffff;
@@ -67,13 +67,18 @@ body {
 
 /* -------------------------------------------Media Queries -------------------------------------------- */
 @media screen and (max-width: 572px) {
+  .resposiveness {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 0;
+    top: 120px;
+    overflow-y: auto;
+  }
   main {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    /* overflow: scroll; */
-    /* scroll-behavior: infinite; */
-    /* height: 100vw; */
   }
   .main-container {
     overflow: visible;
@@ -115,9 +120,17 @@ body {
   .carousel #slide5 {
     height: 140px;
   }
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-right: 10px;
+    z-index: 1;
+  }
   .header #bars {
     display: block;
-    margin-right: 70px;
+    margin-right: 60px;
   }
   .header .favs {
     display: none;
@@ -142,6 +155,11 @@ body {
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
+  width: 100%;
+  background-color: #242424;
+  box-shadow: #242424 0px 1px 3px, #242424 0px 1px 2px;
+  background-size: 100%;
+  margin-bottom: 0.5rem;
 }
 
 #bars {
@@ -202,11 +220,6 @@ body {
 
 /* -------------------------------------------Favourites------------------------------------------- */
 .favs {
-  /* display: flex;
-  width: auto;
-  color: var(--color-support);
-  font-size: 1rem; */
-
   color: #cecfd3;
   font-size: 0.9rem;
   font-weight: 600;
@@ -233,9 +246,6 @@ body {
   justify-content: space-between;
   width: 50%;
   margin-right: 4rem;
-
-  /* media */
-  /* margin-right: 0rem; */
 }
 
 .search-box input {
@@ -253,8 +263,6 @@ body {
 
 .search-box i {
   color: var(--color-support);
-  /* margin-right: 20px;
-  margin-left: 10px; */
 }
 
 .search-box input:focus {
@@ -272,10 +280,15 @@ body {
   width: 3rem;
   border-radius: 1.5rem;
   margin-left: 0.8rem;
-  /* margin-right: 2.5rem; */
 }
 
 /* -------------------------------------------Main code--------------------------------------*/
+
+.resposiveness {
+  width: 100%;
+  display: flex;
+  overflow-x: hidden;
+}
 
 main {
   width: 100%;
@@ -283,7 +296,6 @@ main {
   padding: 0% 3%;
   display: flex;
   justify-content: space-between;
-  /* flex-wrap: wrap; */
   transition: all ease-in-out 1s;
 }
 
@@ -322,7 +334,6 @@ main {
   margin-bottom: 18px;
   margin-top: 8px;
   color: var(--color-support);
-  /* margin-left: 60px; */
   font-weight: 700;
   line-height: 1;
   font-size: var(--fonts-size);
@@ -689,7 +700,6 @@ input[type="checkbox"] {
   position: relative;
   display: inline-block;
   overflow: hidden;
-  /* transition: all 0.3s ease-in-out; */
 }
 .card-img {
   width: 250px;
@@ -759,6 +769,7 @@ input[type="checkbox"] {
 .queue-section {
   display: flex;
   flex-direction: column;
+  align-items: center;
   height: 90vh;
   width: 100%;
 }
