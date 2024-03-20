@@ -25,6 +25,7 @@ p {
 }
 body {
   background-image: var(--background-image);
+  /* background-color: #111111d7; */
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -90,7 +91,8 @@ body {
   }
   main .section-2 {
     width: 100%;
-    height: auto;
+    height: 89vh;
+    /* height: auto; */
   }
   .latest-release-container
     .latest-release-card-container
@@ -156,10 +158,10 @@ body {
   align-items: center;
   box-sizing: border-box;
   width: 100%;
-  background-color: #242424;
-  box-shadow: #242424 0px 1px 3px, #242424 0px 1px 2px;
+  background-color: #111111bd;
+  box-shadow: #111111bd 0px 1px 3px, #111111bd 0px 1px 2px;
   background-size: 100%;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
 }
 
 #bars {
@@ -305,7 +307,7 @@ main {
 /* section one of the main part */
 .section-1 {
   width: 67%;
-  height: 90vh;
+  height: 85vh;
   overflow: scroll;
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -317,7 +319,7 @@ main {
 /* section 2 of the main part */
 .section-2 {
   width: 32%;
-  height: auto;
+  height: 88vh;
 }
 /* ------------------crousels --------------------------- */
 .trending-section {
@@ -770,7 +772,7 @@ input[type="checkbox"] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 90vh;
+  height: 81vh;
   width: 100%;
 }
 .queue-header {
@@ -921,4 +923,147 @@ input[type="checkbox"] {
 
 .wishlist button:focus {
   outline: none;
+}
+
+/* ---------------------------------Footer------------------------------------ */
+footer {
+  /* position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #282828;
+  height: 8%;
+  cursor: pointer; */
+  position: fixed;
+  /* bottom: 540px; */
+  bottom: 0px;
+  width: 100%;
+  height: 9%;
+  background-color: #282828;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 1rem;
+  box-sizing: border-box;
+}
+
+.current-song-visibility {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid white;
+  width: 100%;
+  margin: 3px 0;
+}
+
+.album-and-song-description {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  width: 330px;
+  border: 2px solid white;
+  padding: 0.5rem 0;
+  color: rgba(255, 255, 255, 0.779);
+  overflow-y: hidden;
+  margin-right: 10rem;
+}
+
+.album-and-song-description .wave {
+  font-size: 2rem;
+  margin: 0 10px;
+}
+
+.album-and-song-description img {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+}
+
+.song-description p {
+  font-size: 1.5rem;
+  margin-right: 20px;
+  margin-bottom: 5px;
+}
+.song-description .artist-name {
+  font-size: 1.2rem;
+  color: rgb(143, 134, 134);
+}
+
+.heart-and-ban-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.heart-and-ban-icon i {
+  margin-bottom: 10px;
+}
+
+.shuffle-back-play-pause-forward-loop {
+  display: flex;
+  flex-direction: column;
+  font-size: 2.5rem;
+  border: 2px solid white;
+  justify-content: space-around;
+  align-items: center;
+}
+.shuffle-back-play-pause-forward-loop i {
+  color: rgba(255, 255, 255, 0.779);
+  margin-right: 8rem;
+  padding-top: 5px;
+}
+.shuffle-back-play-pause-forward-loop i:nth-child(1) {
+  margin-left: 4rem;
+}
+.shuffle-back-play-pause-forward-loop i:nth-child(5) {
+  margin-right: 4rem;
+}
+
+.slidecontainer {
+  display: flex;
+  width: 600px;
+  font-size: 1.2rem;
+}
+
+.slidecontainer p {
+  color: white;
+}
+
+.slidecontainer p:nth-child(1) {
+  color: white;
+  margin-right: 10px;
+}
+.slider {
+  /* -webkit-appearance: none; */
+  appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  /* -webkit-appearance: none; */
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04aa6d;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04aa6d;
+  cursor: pointer;
 }
