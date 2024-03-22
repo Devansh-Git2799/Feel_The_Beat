@@ -67,7 +67,7 @@ body {
 }
 
 /* -------------------------------------------Media Queries -------------------------------------------- */
-@media screen and (max-width: 572px) {
+@media screen and (max-width: 1200px) {
   .resposiveness {
     display: flex;
     flex-direction: column;
@@ -148,6 +148,28 @@ body {
   }
 }
 
+/* ------------------Footer Media Query ---------------------- */
+@media screen and (max-width: 1200px) {
+  .current-song-visibility .shuffle-back-play-pause-forward-loop {
+    display: none;
+  }
+  .current-song-visibility .extras {
+    display: none;
+  }
+  .current-song-visibility .album-and-song-description {
+    width: 60%;
+  }
+  .current-song-visibility .play-footer-btn {
+    display: block;
+  }
+  .current-song-visibility .play-footer-btn {
+    display: inline-block;
+  }
+  .current-song-visibility .play-footer-btn:focus {
+    display: none;
+  }
+}
+
 /* Navigation Css */
 
 .header {
@@ -162,6 +184,7 @@ body {
   box-shadow: #111111bd 0px 1px 3px, #111111bd 0px 1px 2px;
   background-size: 100%;
   margin-bottom: 0.2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
 
 #bars {
@@ -311,6 +334,7 @@ main {
   overflow: scroll;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
 /* overflow should be scrollable but the scroll bar should be hidden*/
 .section-1::-webkit-scrollbar {
@@ -458,6 +482,7 @@ input[type="radio"] {
   justify-content: left;
   align-items: center;
   gap: 37px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
 .latest-release-card {
   position: relative;
@@ -696,6 +721,7 @@ input[type="checkbox"] {
   gap: 10px;
   margin-bottom: 2rem;
   cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
 
 .card {
@@ -732,6 +758,7 @@ input[type="checkbox"] {
   flex-direction: column;
   margin-bottom: 2rem;
   justify-content: flex-start;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
 
 .latest-english-header {
@@ -774,6 +801,7 @@ input[type="checkbox"] {
   align-items: center;
   height: 81vh;
   width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
 .queue-header {
   bottom: 1rem;
@@ -927,21 +955,12 @@ input[type="checkbox"] {
 
 /* ---------------------------------Footer------------------------------------ */
 footer {
-  /* position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #282828;
-  height: 8%;
-  cursor: pointer; */
   position: fixed;
-  /* bottom: 540px; */
   bottom: 0px;
   width: 100%;
-  height: 9%;
+  height: 10%;
   background-color: #282828;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding: 0px 1rem;
@@ -951,26 +970,25 @@ footer {
 .current-song-visibility {
   display: flex;
   justify-content: space-between;
-  border: 2px solid white;
+  align-items: center;
   width: 100%;
   margin: 3px 0;
+  padding: 0px 3%;
 }
 
 .album-and-song-description {
   display: flex;
+  /* justify-content: space-around; */
   align-items: center;
-  /* justify-content: space-between; */
-  width: 330px;
-  border: 2px solid white;
+  width: 25%;
   padding: 0.5rem 0;
   color: rgba(255, 255, 255, 0.779);
-  overflow-y: hidden;
-  margin-right: 10rem;
+  /* margin-right: 5%; */
 }
 
 .album-and-song-description .wave {
-  font-size: 2rem;
-  margin: 0 10px;
+  font-size: 1.4rem;
+  margin: 0 5%;
 }
 
 .album-and-song-description img {
@@ -980,49 +998,55 @@ footer {
 }
 
 .song-description p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-right: 20px;
   margin-bottom: 5px;
 }
 .song-description .artist-name {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: rgb(143, 134, 134);
 }
 
 .heart-and-ban-icon {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 0.9rem;
 }
 .heart-and-ban-icon i {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .shuffle-back-play-pause-forward-loop {
   display: flex;
+  width: 33%;
   flex-direction: column;
-  font-size: 2.5rem;
-  border: 2px solid white;
-  justify-content: space-around;
+  font-size: 1rem;
+  justify-content: space-between;
   align-items: center;
+  /* margin-right: 12%; */
+}
+.player-controls {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  color: rgba(255, 255, 255, 0.779);
 }
 .shuffle-back-play-pause-forward-loop i {
-  color: rgba(255, 255, 255, 0.779);
-  margin-right: 8rem;
+  font-size: 1.8rem;
   padding-top: 5px;
 }
-.shuffle-back-play-pause-forward-loop i:nth-child(1) {
-  margin-left: 4rem;
-}
-.shuffle-back-play-pause-forward-loop i:nth-child(5) {
-  margin-right: 4rem;
+.shuffle-back-play-pause-forward-loop i:hover {
+  color: green;
 }
 
 .slidecontainer {
   display: flex;
-  width: 600px;
-  font-size: 1.2rem;
+  justify-content: space-between;
+  width: 100%;
+  /* font-size: 1.2rem; */
 }
 
 .slidecontainer p {
@@ -1034,15 +1058,12 @@ footer {
   margin-right: 10px;
 }
 .slider {
-  /* -webkit-appearance: none; */
-  appearance: none;
-  width: 100%;
-  height: 15px;
+  width: 80%;
+  height: 8px;
   border-radius: 5px;
   background: #d3d3d3;
   outline: none;
   opacity: 0.7;
-  -webkit-transition: 0.2s;
   transition: opacity 0.2s;
 }
 
@@ -1050,20 +1071,39 @@ footer {
   opacity: 1;
 }
 
-.slider::-webkit-slider-thumb {
-  /* -webkit-appearance: none; */
-  appearance: none;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: #04aa6d;
+.extras {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 1.3rem;
+  width: 20%;
+  margin-right: 10%;
+}
+
+.sliderVolume {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-right: 15px;
+}
+
+.sliderVolume i {
+  margin-right: 10px;
+}
+#footer-box {
+  display: none;
+}
+
+#playPauseLabel {
+  font-size: 4rem;
+  color: wheat;
   cursor: pointer;
 }
 
-.slider::-moz-range-thumb {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: #04aa6d;
-  cursor: pointer;
+.play-footer-btn {
+  display: none;
+}
+
+#playPauseLabel i .fa-circle-pause {
+  display: none;
 }

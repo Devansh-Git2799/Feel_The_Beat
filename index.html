@@ -950,7 +950,7 @@
           </div>
         </div>
         <div class="shuffle-back-play-pause-forward-loop">
-          <div>
+          <div class="player-controls">
             <i class="fa-solid fa-shuffle"></i>
             <i class="fa-solid fa-backward-step"></i>
             <i class="fa-regular fa-circle-play"></i>
@@ -971,9 +971,43 @@
           </div>
         </div>
         <div class="extras">
-          <i class="fas fa-list-ul" style="color: white"></i>
+          <i class="fas fa-list-ul" style="color: white; margin-right: 5px"></i>
+          <i
+            class="fa-solid fa-laptop"
+            style="color: white; margin-right: 5px"
+          ></i>
+          <div class="sliderVolume">
+            <i class="fa-solid fa-volume-high" style="color: white"></i>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value="0"
+              class="volume"
+              id="myRange"
+            />
+          </div>
+        </div>
+        <div class="play-footer-btn">
+          <input type="checkbox" id="footer-box" />
+          <label for="footer-box" id="playPauseLabel">
+            <i class="fa-solid fa-circle-play"></i>
+          </label>
         </div>
       </div>
     </footer>
+    <script>
+      const playPauseCheckbox = document.getElementById("footer-box");
+      console.log(playPauseCheckbox);
+      const playPauseLabel = document.getElementById("playPauseLabel");
+      console.log(playPauseLabel);
+      playPauseCheckbox.addEventListener("change", function () {
+        if (this.checked) {
+          playPauseLabel.innerHTML = '<i class="fa-solid fa-circle-pause"></i>';
+        } else {
+          playPauseLabel.innerHTML = '<i class="fa-solid fa-circle-play">';
+        }
+      });
+    </script>
   </body>
 </html>
