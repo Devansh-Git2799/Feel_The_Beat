@@ -67,6 +67,24 @@ body {
 }
 
 /* -------------------------------------------Media Queries -------------------------------------------- */
+@media screen and (min-width: 768px) and (max-width: 1400px) {
+  .latest-release-container
+    .latest-release-card-container
+    .latest-release-card {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 1.8rem;
+  }
+  footer .album-and-song-description {
+    width: 37%;
+  }
+  footer .album-and-song-description .song-description p {
+    font-size: 1rem;
+  }
+  footer .shuffle-back-play-pause-forward-loop {
+    margin-right: 30px;
+  }
+}
 @media screen and (max-width: 768px) {
   .current-song-visibility .shuffle-back-play-pause-forward-loop {
     display: none;
