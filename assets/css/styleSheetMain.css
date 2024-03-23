@@ -67,7 +67,25 @@ body {
 }
 
 /* -------------------------------------------Media Queries -------------------------------------------- */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
+  .current-song-visibility .shuffle-back-play-pause-forward-loop {
+    display: none;
+  }
+  .current-song-visibility .extras {
+    display: none;
+  }
+  .current-song-visibility .album-and-song-description {
+    width: 60%;
+  }
+  .current-song-visibility .play-footer-btn {
+    display: block;
+  }
+  .current-song-visibility .play-footer-btn {
+    display: inline-block;
+  }
+  .current-song-visibility .play-footer-btn:focus {
+    display: none;
+  }
   .resposiveness {
     display: flex;
     flex-direction: column;
@@ -92,7 +110,6 @@ body {
   main .section-2 {
     width: 100%;
     height: 89vh;
-    /* height: auto; */
   }
   .latest-release-container
     .latest-release-card-container
@@ -103,24 +120,23 @@ body {
   .latest-release-container .latest-release-dropdown-container {
     background: rgb(148, 148, 148);
   }
-
   main .trending-section {
     margin-bottom: 4.5rem;
   }
   .carousel #slide1 {
-    height: 140px;
+    height: 180px;
   }
   .carousel #slide2 {
-    height: 140px;
+    height: 180px;
   }
   .carousel #slide3 {
-    height: 140px;
+    height: 180px;
   }
   .carousel #slide4 {
-    height: 140px;
+    height: 180px;
   }
   .carousel #slide5 {
-    height: 140px;
+    height: 180px;
   }
   .header {
     position: fixed;
@@ -147,28 +163,28 @@ body {
     width: 55%;
   }
 }
-
-/* ------------------Footer Media Query ---------------------- */
-@media screen and (max-width: 1200px) {
-  .current-song-visibility .shuffle-back-play-pause-forward-loop {
-    display: none;
+@media screen and (max-width: 572px) {
+  main .trending-section {
+    margin-bottom: 4.5rem;
   }
-  .current-song-visibility .extras {
-    display: none;
+  .carousel #slide1 {
+    height: 140px;
   }
-  .current-song-visibility .album-and-song-description {
-    width: 60%;
+  .carousel #slide2 {
+    height: 140px;
   }
-  .current-song-visibility .play-footer-btn {
-    display: block;
+  .carousel #slide3 {
+    height: 140px;
   }
-  .current-song-visibility .play-footer-btn {
-    display: inline-block;
+  .carousel #slide4 {
+    height: 140px;
   }
-  .current-song-visibility .play-footer-btn:focus {
-    display: none;
+  .carousel #slide5 {
+    height: 140px;
   }
 }
+
+/* ------------------Footer Media Query ---------------------- */
 
 /* Navigation Css */
 
@@ -334,7 +350,7 @@ main {
   overflow: scroll;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); */
 }
 /* overflow should be scrollable but the scroll bar should be hidden*/
 .section-1::-webkit-scrollbar {
